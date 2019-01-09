@@ -3,7 +3,19 @@ import React from 'react';
 const App = (props) => React.createElement(
   'div',
   null,
-  `Application Component. You're in ${props.appName} and you have ${props.appVersion} version.`,
+  'Application Component. You are in ',
+  React.createElement(
+    'mark',
+    null,
+    props.appName,
+  ),
+  ' and you have ',
+  React.createElement(
+    'mark',
+    null,
+    props.appVersion,
+  ),
+  ' version.',
 );
 
 export default React.memo(App);

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App module should render snapshot 1`] = `
+<div>
+  Application Component. You are in 
+  <mark>
+    App Name
+  </mark>
+   and you have 
+  <mark>
+    1.1
+  </mark>
+   version.
+</div>
+`;
