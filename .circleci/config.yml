@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.15
+    working_directory: /app
     steps:
       - checkout
       - run:
