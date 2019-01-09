@@ -1,9 +1,13 @@
 import React from 'react';
 
+const sum = (a, b) => a + b;
+const sum1 = (a, b) => a + b;
+const sum2 = (a, b) => a + b;
+
 const App = (props) => React.createElement(
   'div',
   null,
-  'Check for error... Application Component. You are in ',
+  'Application Component. You are in ',
   React.createElement(
     'mark',
     null,
