@@ -1,0 +1,13 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.15
+    steps:
+      - checkout
+      - run:
+          name: Setup Dependencies
+          command: cd app && npm install
+      - run:
+          name: test
+          command: cd app && npm test
