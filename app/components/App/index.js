@@ -3,7 +3,7 @@ import React from 'react';
 const App = (props) => React.createElement(
   'div',
   null,
-  'Application Component. You are in ',
+  'Check for error... Application Component. You are in ',
   React.createElement(
     'mark',
     null,
