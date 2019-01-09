@@ -3,12 +3,11 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.15
-    working_directory: /app
     steps:
       - checkout
       - run:
           name: Setup Dependencies
-          command: npm install
+          command: cd app && npm install
       - run:
           name: test
-          command: npm test
+          command: cd app && npm test
