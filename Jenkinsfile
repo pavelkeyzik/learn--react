@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:10.15' } }
+    agent { docker { label: 'docker', image 'node:10.15' } }
     tools {
       org.jenkinsci.plugins.docker.commons.tools.DockerTool 'docker'
     }
