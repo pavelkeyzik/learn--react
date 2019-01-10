@@ -1,10 +1,14 @@
 pipeline {
-    agent { docker { label: 'docker', image 'node:10.15' } }
+    agent { label: 'dockerserver' }
     tools {
       org.jenkinsci.plugins.docker.commons.tools.DockerTool 'docker'
     }
     stages {
         stage('build') {
+            agent {
+              label: 'dockerserver'
+              image 'node:10.15'
+            }
             steps {
                 sh 'npm --version'
             }
