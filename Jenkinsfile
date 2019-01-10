@@ -1,10 +1,12 @@
 pipeline {
-    agent { label: 'dockerserver' }
+    agent {
+      label 'dockerserver'
+    }
     stages {
         stage('build') {
             agent {
               docker {
-                label: 'dockerserver'
+                label 'dockerserver'
                 image 'node:10.15'
               }
             }
